@@ -1,0 +1,6 @@
+{
+    "name": "Simple HTTP Servers",
+    "defaultDirName": "simple-http-servers",
+    "defaultHlqSegment": "SIMPHTTP",
+    "zfsMegabytes": 500
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Kotlit Ktor Simple HTTP Server",
+    "deployment": {
+        "files": {
+            "build/libs/kotlin-ktor-server-0.0.1-all.jar": {
+                "target": "bin/kotlin-ktor-server-all.jar",
+                "binary": true
+            }
+        }
+    },
+    "shellStartCommand": "$JAVA -Xquickstart -jar bin/kotlin-ktor-server-all.jar -port=11050",
+    "jobTemplatePath": "jcl/template.jcl",
+    "jobPath": "build/api.jcl",
+    "defaultDirName": "simple-http-servers/kotlin-ktor-server",
+    "defaultHlqSegment": "SIMPHTTP.KOTLKTOR",
+    "zfsMegabytes": 100
+}
