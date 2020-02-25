@@ -25,3 +25,5 @@ hs_err_pid*
 # zowe-api-dev
 user-zowe-api.json
 lastJob.json
+python-flask-server/_api.jcl
+*.pyc

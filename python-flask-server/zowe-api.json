@@ -1,0 +1,20 @@
+{
+    "name": "Python Flask Simple HTTP Server",
+    "deployment": {
+        "files": {
+            "app.py": {
+                "target": "app.py",
+                "binary": true,
+                "postCommands": [
+                    "chtag -c ISO8859-1 app.py"
+                ]
+            }
+        }
+    },
+    "shellStartCommand": ". /z/masserv/python36/rocket_python_env.sh; FLASK_APP=app.py FLASK_ENV=production python3 -m flask run --port=11052 --host=0.0.0.0",
+    "jobTemplatePath": "template.jcl",
+    "jobPath": "_api.jcl",
+    "defaultDirName": "simple-http-servers/python-flask-server",
+    "defaultHlqSegment": "SIMPHTTP.PYFLASK",
+    "zfsMegabytes": 1
+}
