@@ -1,6 +1,7 @@
 # Golang Simple HTTP Server
 
 - <https://golang.org/doc/articles/wiki/>
+- <https://levelup.gitconnected.com/golang-on-mainframe-z-os-14276f747eb>
 
 ## Building locally
 
