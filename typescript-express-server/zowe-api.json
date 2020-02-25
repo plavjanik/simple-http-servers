@@ -1,0 +1,20 @@
+{
+    "name": "Python Flask Simple HTTP Server",
+    "deployment": {
+        "files": {
+            "typescript-express-server-0.0.1.tgz": {
+                "target": "typescript-express-server-0.0.1.tgz",
+                "binary": true,
+                "postCommands": [
+                    ". /z/masserv/node12/nodeenv.sh; chtag -b *.tgz; npm init --force; chtag -c ISO-8859-1 *.json; npm install ./typescript-express-server-0.0.1.tgz --save"
+                ]
+            }
+        }
+    },
+    "shellStartCommand": ". /z/masserv/node12/nodeenv.sh; PORT=11053 node node_modules/typescript-express-server/dist/index.js",
+    "jobTemplatePath": "template.jcl",
+    "jobPath": "_api.jcl",
+    "defaultDirName": "simple-http-servers/typescript-express",
+    "defaultHlqSegment": "SIMPHTTP.TYPEEXPR",
+    "zfsMegabytes": 1
+}
