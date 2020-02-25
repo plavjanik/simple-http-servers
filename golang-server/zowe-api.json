@@ -1,0 +1,20 @@
+{
+    "name": "Python Flask Simple HTTP Server",
+    "deployment": {
+        "files": {
+            "server.go": {
+                "target": "server.go",
+                "binary": true,
+                "postCommands": [
+                    ". /z/masserv/go/goenv.sh; go build server.go"
+                ]
+            }
+        }
+    },
+    "shellStartCommand": ". /z/masserv/go/goenv.sh; PORT=11054 ./server",
+    "jobTemplatePath": "template.jcl",
+    "jobPath": "_api.jcl",
+    "defaultDirName": "simple-http-servers/golang-server",
+    "defaultHlqSegment": "SIMPHTTP.GOLANG",
+    "zfsMegabytes": 1
+}

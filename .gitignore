@@ -27,9 +27,11 @@ user-zowe-api.json
 lastJob.json
 python-flask-server/_api.jcl
 *.pyc
+.zowe-api-dev/
 
 # Node.js
 node_modules/
 dist/
 *.tgz
 package-lock.json
+golang-server/server
