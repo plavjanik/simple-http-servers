@@ -30,10 +30,16 @@ java -jar build/libs/kotlin-ktor-server-0.0.1-all.jar -port 11050
     zowe-api-dev init --account=<account-number>
     ```
 
-3. Allocate zFS:
+3. Deploy:
 
     ```sh
-    zowe-api-dev zfs
+    zowe-api-dev deploy
+    ```
+
+4. Start:
+
+    ```sh
+    zowe-api-dev start
     ```
 
 ## Performance test on z/OS
