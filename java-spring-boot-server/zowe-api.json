@@ -1,0 +1,17 @@
+{
+    "name": "Java Spring Boot Simple HTTP Server",
+    "deployment": {
+        "files": {
+            "build/libs/java-spring-boot-server-0.0.1-SNAPSHOT.jar": {
+                "target": "bin/java-spring-boot-server.jar",
+                "binary": true
+            }
+        }
+    },
+    "shellStartCommand": "$JAVA -Xquickstart -jar bin/java-spring-boot-server.jar --server.port=11051",
+    "jobTemplatePath": "jcl/template.jcl",
+    "jobPath": "build/api.jcl",
+    "defaultDirName": "simple-http-servers/java-spring-boot-server",
+    "defaultHlqSegment": "SIMPHTTP.JAVABOOT",
+    "zfsMegabytes": 100
+}
