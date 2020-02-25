@@ -4,7 +4,7 @@
 
 ## Dependencies
 
-pip install flask
+npm install
 
 ## Running locally
 
