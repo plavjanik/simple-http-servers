@@ -9,7 +9,7 @@ pip install flask
 ## Running locally
 
 ```sh
-flask run port=11051
+flask run --port=11051 --host=0.0.0.0
 ```
 
 ## Running on z/OS
