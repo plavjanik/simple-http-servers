@@ -2,7 +2,7 @@
 {{{this}}}
 {{/each}}
 //********************************************************************
-//NODE EXEC PGM=BPXBATCH
+//GO EXEC PGM=BPXBATCH
 //STDPARM DD *
 SH cd {{{user.zosTargetDir}}};
 PORT=11054 ./server

@@ -1,5 +1,5 @@
 {
-    "name": "Python Flask Simple HTTP Server",
+    "name": "Golang Simple HTTP Server",
     "zosSourcesDir": "src",
     "buildCommand": ". /z/masserv/go/goenv.sh; mv server.go server.go-ebcdic; iconv -T -f IBM-1047 -t ISO8859-1 server.go-ebcdic > server.go; go build server.go",
     "buildFiles": {
