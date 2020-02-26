@@ -34,4 +34,6 @@ node_modules/
 dist/
 *.tgz
 package-lock.json
-golang-server/server
+
+.DS_Store
+build/

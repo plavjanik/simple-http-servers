@@ -5,7 +5,7 @@
 
 ## Building locally
 
-go build server.go
+go build src/server.go
 
 ## Running locally
 
@@ -27,13 +27,19 @@ PORT=11053 ./server
     zowe-api-dev init --account=<account-number>
     ```
 
-3. Deploy:
+3. Build on z/OS:
+
+    ```sh
+    zowe-api-dev zosbuild
+    ```
+
+4. Deploy:
 
     ```sh
     zowe-api-dev deploy
     ```
 
-4. Start:
+5. Start:
 
     ```sh
     zowe-api-dev start

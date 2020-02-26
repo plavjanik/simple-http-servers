@@ -1,20 +1,27 @@
 {
     "name": "Python Flask Simple HTTP Server",
+    "zosSourcesDir": "src",
+    "buildCommand": ". /z/masserv/go/goenv.sh; mv server.go server.go-ebcdic; iconv -T -f IBM-1047 -t ISO8859-1 server.go-ebcdic > server.go; go build server.go",
+    "buildFiles": {
+        "server": "build/server"
+    },
     "deployment": {
         "files": {
-            "server.go": {
-                "target": "server.go",
+            "build/server": {
+                "target": "server",
                 "binary": true,
                 "postCommands": [
-                    ". /z/masserv/go/goenv.sh; go build server.go"
+                    "chmod a+x server"
                 ]
             }
         }
     },
-    "shellStartCommand": ". /z/masserv/go/goenv.sh; PORT=11054 ./server",
+    "shellStartCommand": "PORT=11054 ./server",
     "jobTemplatePath": "template.jcl",
-    "jobPath": "_api.jcl",
+    "jobPath": "build/_api.jcl",
     "defaultDirName": "simple-http-servers/golang-server",
     "defaultHlqSegment": "SIMPHTTP.GOLANG",
     "zfsMegabytes": 1
 }
+
+
