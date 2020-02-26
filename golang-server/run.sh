@@ -1,0 +1,5 @@
+BASEDIR=$(dirname "$0")
+export PORT=11054
+export _BPXK_AUTOCVT=ON
+export _CEE_RUNOPTS="FILETAG(AUTOCVT,AUTOTAG)"
+${BASEDIR}/server 2>&1

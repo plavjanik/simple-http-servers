@@ -13,6 +13,13 @@
                 "postCommands": [
                     "chmod a+x server"
                 ]
+            },
+            "run.sh": {
+                "target": "run.sh",
+                "binary": false,
+                "postCommands": [
+                    "chmod a+x run.sh"
+                ]
             }
         }
     },
@@ -23,5 +30,3 @@
     "defaultHlqSegment": "SIMPHTTP.GOLANG",
     "zfsMegabytes": 1
 }
-
-

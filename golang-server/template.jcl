@@ -3,9 +3,8 @@
 {{/each}}
 //********************************************************************
 //GO EXEC PGM=BPXBATCH
+// SET HOME='{{{user.zosTargetDir}}}'
 //STDPARM DD *
-SH cd {{{user.zosTargetDir}}};
-PORT=11054 ./server
-/*
-//STDOUT DD SYSOUT=*
-//STDERR DD SYSOUT=*
+SH /bin/sh {{{user.zosTargetDir}}}/run.sh
+//STDOUT DD PATH='&HOME/server.log',
+//  PATHOPTS=(OWRONLY,OCREAT,OTRUNC),PATHMODE=SIRWXU
