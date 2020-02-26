@@ -8,5 +8,5 @@ log.setLevel(logging.ERROR)
 
 @app.route('/greeting')
 def hello():
-    name = request.args.get('name')
+    name = request.args.get('name') or "world"
     return f"Hello, {name}!"
