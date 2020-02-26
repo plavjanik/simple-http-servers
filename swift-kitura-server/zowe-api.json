@@ -1,0 +1,27 @@
+{
+    "name": "Swift Kitura Simple HTTP Server",
+    "zosSourcesDir": "HelloKitura",
+    "buildCommand": ". /z/masserv/swift/swift-v4.2.1-201902261740/etc/profile; export _BPXK_AUTOCVT=ON; export _CEE_RUNOPTS='FILETAG(AUTOCVT,AUTOTAG)'; export KITURA_ROOT=/z/masserv/swift/swift-v4.2.1-201902261740/examples/kitura; swift build -c release",
+    "buildFiles": {
+        "server": "build/server"
+    },
+    "deployment": {
+        "files": {
+            "build/server": {
+                "target": "server",
+                "binary": true,
+                "postCommands": [
+                    "chmod a+x server"
+                ]
+            }
+        }
+    },
+    "shellStartCommand": ". /z/masserv/swift/swift-v4.2.1-201902261740/etc/profile; .build/s390x-ibm-zos/release/HelloKitura",
+    "jobTemplatePath": "template.jcl",
+    "jobPath": "_api.jcl",
+    "defaultDirName": "simple-http-servers/swift-kitura-server",
+    "defaultHlqSegment": "SIMPHTTP.SWIFT",
+    "zfsMegabytes": 200
+}
+
+
