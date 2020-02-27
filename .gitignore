@@ -35,5 +35,10 @@ dist/
 *.tgz
 package-lock.json
 
+# Rust
+target/
+Cargo.lock
+
 .DS_Store
 build/
+
