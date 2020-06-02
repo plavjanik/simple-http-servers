@@ -1,4 +1,4 @@
-# Python Flask Simple HTTP Server
+# TypeScript Express Simple HTTP Server
 
 - <https://developer.okta.com/blog/2018/11/15/node-express-typescript>
 - <https://medium.com/@plape/installing-node-js-on-the-mainframe-both-linux-and-z-os-to-run-zowe-cli-19abb6494e41>
